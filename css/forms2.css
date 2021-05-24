@@ -42,22 +42,25 @@ body {
     color: #FF2E63;
     padding-right: 20px;
 }
-.header__logo {
-    display: inline-block;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
+.header__left {
+    font-family: Rajdhani, sans-serif;
+    font-weight: bold;
     font-size: 30px;
+    line-height: 1.27;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
+    display: inline-flex;
+}
+.header__logo {
     color:#252A34;
 }
-.header__logo_red {
+.header__auto {
     color: #FF2E63;
-    margin: -3px;
 }
 .LogReg {
     min-height: 80vh;
 }
-.container {
+.LogReg__body {
     display: flex;
     flex-direction: column-reverse;
 }
@@ -71,7 +74,7 @@ body {
     line-height: 1.28;
     color: #343434;
     text-decoration: none;
-    padding-right: 60px;
+    margin-right: 60px;
 }
 .LogReg__link:after {
     content: "";
@@ -96,32 +99,15 @@ body {
     display: none;
     position: relative;
 }
-.LogReg__content:target~.LogReg__link .tabs__log{
-    width: 118px;
-    height: 5px;
-    background-color: #FF2E63 ;
-    border-radius:5px ;
-    position: relative;
-    bottom: 0.8em;
-    right: 7em;
-}
 #Login:target~.LogReg__link .tabs__log{
-    width: 118px;
-    height: 5px;
-    background-color: #FF2E63 ;
     border-radius:5px ;
     position: relative;
-    bottom: 0.8em;
-    right: 7em;
+    border-bottom: 5px solid #FF2E63;
 }
 #Register:target~.LogReg__link .tabs__reg{
-    width: 118px;
-    height: 5px;
-    background-color: #FF2E63 ;
     border-radius:5px ;
     position: relative;
-    bottom: 0.8em;
-    right: 7em;
+    border-bottom: 5px solid #FF2E63;
 }
 .form {
     max-width: 417px;
