@@ -109,6 +109,44 @@ body {
     position: relative;
     border-bottom: 5px solid #FF2E63;
 }
+@keyframes rotateleft {
+    from {
+        transform: skew(25deg 25deg);
+        background: coral;
+        transform: translateX(-250);
+    }
+    to {
+        transform: skew(45deg 45deg);
+        background: cyan;
+        transform: translateX(25);
+    }
+}
+@keyframes puls {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+.tabs__log:hover {
+    animation:rotateleft 2s linear infinite ;
+}
+@keyframes rotateright {
+    from {
+        transform: skew(-25deg -25deg);
+        background: rgb(178, 226, 64);
+        transform: translateX(250);
+        }
+    to {
+        transform: skew(-45deg -45deg);
+        background: rgb(118, 73, 221);
+        transform: scale(2);
+    }
+}
+.tabs__reg:hover {
+    animation: rotateright 1s linear infinite, puls 2s linear infinite ;
+}
 .form {
     max-width: 417px;
     margin-left: auto;
